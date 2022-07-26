@@ -1,0 +1,11 @@
+/*****Header CSS******/
+#header {
+  background: url("/images/banner.SVG") no-repeat center;
+}
+
+@media (max-width: 576px) {
+
+  #header {
+    background: #DBDCDF;
+  }
+}

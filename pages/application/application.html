@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/fonts/simple-line-icons.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#slider-range").slider({
+        range: false,
+        min: 100,
+        max: 500,
+        values: [75],
+        slide: function (event, ui) {
+          $("#amount").val("$" + ui.values[0]);
+        }
+      });
+      $("#amount").val("$" + $("#slider-range").slider("values", 0));
+      $("#datepicker").datepicker();
+    });
+  </script>
+</head>
+</head>
+
+<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+  <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+    <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+          <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Brand</a>
+          </li>
+          <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+          <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#services">Apply for
+              Loan</a></li>
+          <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Log In</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+
+    <head></head>
+    <div class="col-sm-8 mt-5">
+      <div class="d-md-flex align-items-center justify-content-center  pb-3">
+        <div class="content mb-md-0 mb-5">
+          <p class="h2">The Simple online home Loan</p>
+          <p class="line"></p>
+          <p class="p2">Financial uncertainty is hard on employees and causes even.</p>
+          <div class="btn btn-primary">Our Service</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mt-5">
+      <div class="card">
+        <form>
+          <div class="d-flex flex-column align-items-center">
+            <p class="fs-4 fw-bold m-0 mt-4">How much you want?</p> <span class="text-muted">We provide online
+              instant cash loans.</span> <span class="line my-3"></span>
+          </div>
+          <div class="row p-0">
+            <div class="col-12 p-0 px-4 "> <span class="text-uppercase text-muted">amount you want :</span><input
+                type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"> </div>
+            <div class="col-12 p-0 px-4 mt-2">
+
+
+              <div id="slider-range"></div>
+            </div>
+            <div class="col-12 p-0 px-4 mt-4"> <span class="text-uppercase text-muted">Payback Date</span> </div>
+            <div class="col-12 p-0 px-4 "> <input type="text" id="datepicker" class="form-control"> </div>
+            <div class="col-12 p-0 px-4 ">
+              <div class="d-flex align-items-center my-3"> <span class="text-muted text-uppercase">you have to
+                  pay:</span> <span class="c-g ps-1">$ <span id="money"></span></span> </div>
+            </div>
+            <div class="col-12 p-0 px-4">
+              <div class="btn btn-primary w-100">apply now</div>
+              <div class="text-muted text-center mb-4 mt-3">We provide online instant cash loans</div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/js/stylish-portfolio.js"></script>
+</body>
+
+</html>
