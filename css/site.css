@@ -9,3 +9,11 @@
     background: #DBDCDF;
   }
 }
+
+#login {
+  background: url("/images/login_background.SVG") no-repeat center;
+}
+
+#apply {
+  background: url("/images/home_page_background.SVG") no-repeat left top;
+}
