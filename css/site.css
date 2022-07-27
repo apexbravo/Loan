@@ -1,19 +1,19 @@
 /*****Header CSS******/
-#header {
+#homepage {
   background: url("/images/banner.SVG") no-repeat center;
 }
 
 @media (max-width: 576px) {
 
-  #header {
+  #homepage {
     background: #DBDCDF;
   }
 }
 
-#login {
+#loginpage {
   background: url("/images/login_background.SVG") no-repeat center;
 }
 
-#apply {
+#applypage {
   background: url("/images/home_page_background.SVG") no-repeat left top;
 }
