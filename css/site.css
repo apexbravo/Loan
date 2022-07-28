@@ -17,3 +17,9 @@
 #applypage {
   background: url("/images/home_page_background.SVG") no-repeat left top;
 }
+
+.amountcolor {
+  border: 0;
+  color: #f6931f;
+  font-weight: bold;
+}

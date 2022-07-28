@@ -24,10 +24,12 @@
         values: [75],
         slide: function (event, ui) {
           $("#amount").val("$" + ui.values[0]);
+          $("#money").val("$" + (ui.values[0] * 0.025).toFixed(2));
         }
       });
       $("#amount").val("$" + $("#slider-range").slider("values", 0));
       $("#datepicker").datepicker();
+      $("#money").val("$" + ($("#slider-range").slider("values", 0) * 0.025).toFixed(2));
     });
   </script>
 
@@ -73,7 +75,7 @@
           </div>
           <div class="row p-0">
             <div class="col-12 p-0 px-4 "> <span class="text-uppercase text-muted">amount you want :<input type="text"
-                  id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;" class="col-sm-2"></span>
+                  id="amount" readonly class="col-sm-2 amountcolor"></span>
             </div>
             <div class="col-12 p-0 px-4 mt-2">
 
@@ -83,8 +85,9 @@
             <div class="col-12 p-0 px-4 mt-4"> <span class="text-uppercase text-muted">Payback Date</span> </div>
             <div class="col-12 p-0 px-4 "> <input type="text" id="datepicker" class="form-control"> </div>
             <div class="col-12 p-0 px-4 ">
-              <div class="d-flex align-items-center my-3"> <span class="text-muted text-uppercase">you have to
-                  pay:</span> <span class="c-g ps-1">$ <span id="money"></span></span> </div>
+              <div class=" my-3"> <span class="text-muted text-uppercase">amount
+                  pay per day:</span> <span class="c-g ps-1"> <input type="text" id="money" class="amountcolor col-sm-3"
+                    readonly /></span> </div>
             </div>
             <div class="col-12 p-0 px-4">
               <div class="btn btn-primary w-100">apply now</div>
